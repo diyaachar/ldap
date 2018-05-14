@@ -1,0 +1,40 @@
+# Add John Smith to the organization
+dn: uid=jsmith1,ou=People,dc=example,dc=com
+#changetype: add
+objectClass: inetOrgPerson
+description: John Smith - user 1
+cn: John Smith
+sn: Smith
+uid: jsmith1
+loginShell: bin/bash
+uidNumber: 1000
+gidNumber: 2000
+homeDirectory: /home/jsmith1
+
+# Add Sally Brown to the organization
+dn: uid=sbrown20,ou=People,dc=example,dc=com
+#changetype: add
+objectClass: inetOrgPerson
+description: Sally Brown - user 2
+cn: Sally Brown
+sn: Brown
+uid: sbrown20
+loginShell: bin/bash
+uidNumber: 1001
+gidNumber: 2001
+homeDirectory: /home/sbrown20
+
+#Add dev01 group
+dn: gid=dev01,ou=othergroup,dc=example,dc=com
+objectClass: inetOrgPerson
+description: Development group 01
+ou: othergroup
+gidNumber: 2001
+
+#Add test01 group
+dn: gid=test01,ou=othergroup,dc=example,dc=com
+objectClass: inetOrgPerson
+description: Testing group 01
+ou: othergroup
+gidNumber: 2000
+
